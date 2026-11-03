@@ -74,6 +74,12 @@
 
                 <TextView
                     style="@style/Organizador.Dato"
+                    app:drawableStartCompat="@drawable/ic_person"
+                    android:text="@string/acerca_autor_2"
+                    android:textColor="?attr/colorOnSurface" />
+
+                <TextView
+                    style="@style/Organizador.Dato"
                     app:drawableStartCompat="@drawable/ic_location"
                     android:text="@string/acerca_escuela" />
 

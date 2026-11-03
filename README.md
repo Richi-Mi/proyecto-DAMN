@@ -3,7 +3,7 @@
 Aplicación Android nativa, programada en Kotlin, para llevar el control de las tareas y actividades de una persona: reuniones, entregas de proyecto, prácticas, exámenes y otros eventos, con estatus, ubicación, contacto y recordatorio.
 
 Proyecto final de **Desarrollo de Aplicaciones Móviles Nativas** (7.º semestre), Escuela Superior de Cómputo (ESCOM) – IPN.
-Autor: José Ricardo Mendoza Castañeda.
+Autores: José Ricardo Mendoza Castañeda y Alan Gonzalez Lopez.
 
 ## Estado del proyecto
 

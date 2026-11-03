@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Material 3 (tema oscuro) -->
+    <color name="md_primary">#C9BFFF</color>
+    <color name="md_on_primary">#2F1E87</color>
+    <color name="md_primary_container">#46369F</color>
+    <color name="md_on_primary_container">#E6DEFF</color>
+    <color name="md_secondary">#C8C3DC</color>
+    <color name="md_on_secondary">#312E41</color>
+    <color name="md_secondary_container">#474459</color>
+    <color name="md_on_secondary_container">#E5DFF9</color>
+    <color name="md_tertiary">#EDB8CD</color>
+    <color name="md_on_tertiary">#482535</color>
+    <color name="md_tertiary_container">#613B4C</color>
+    <color name="md_on_tertiary_container">#FFD8E6</color>
+    <color name="md_error">#FFB4AB</color>
+    <color name="md_on_error">#690005</color>
+    <color name="md_error_container">#93000A</color>
+    <color name="md_on_error_container">#FFDAD6</color>
+    <color name="md_background">#141318</color>
+    <color name="md_on_background">#E6E1E9</color>
+    <color name="md_surface">#141318</color>
+    <color name="md_on_surface">#E6E1E9</color>
+    <color name="md_surface_variant">#48454E</color>
+    <color name="md_on_surface_variant">#C9C4D0</color>
+    <color name="md_outline">#938F99</color>
+    <color name="md_outline_variant">#48454E</color>
+    <color name="md_surface_container_lowest">#0F0D13</color>
+    <color name="md_surface_container_low">#1C1B20</color>
+    <color name="md_surface_container">#201F25</color>
+    <color name="md_surface_container_high">#2B292F</color>
+    <color name="md_surface_container_highest">#36343A</color>
+
+    <color name="barra_superior">#2E2470</color>
+    <color name="sobre_barra_superior">#E6DEFF</color>
+
+    <color name="estatus_pendiente_fondo">#5C4300</color>
+    <color name="estatus_pendiente_texto">#FFE08A</color>
+    <color name="estatus_realizado_fondo">#0F5223</color>
+    <color name="estatus_realizado_texto">#C8F0D0</color>
+    <color name="estatus_aplazado_fondo">#8C1D18</color>
+    <color name="estatus_aplazado_texto">#FFDAD6</color>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Detalle de un evento elegido en el calendario (BottomSheetDialog). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingBottom="24dp">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/categoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+            android:textColor="?attr/colorPrimary"
+            tools:text="Reunión" />
+
+        <TextView
+            android:id="@+id/estatus"
+            style="@style/Organizador.Estatus"
+            tools:backgroundTint="@color/estatus_pendiente_fondo"
+            tools:text="Pendiente"
+            tools:textColor="@color/estatus_pendiente_texto" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        tools:text="Revisión del primer avance de la app" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp" />
+
+    <TextView
+        android:id="@+id/fecha"
+        style="@style/Organizador.Dato"
+        app:drawableStartCompat="@drawable/ic_calendar"
+        tools:text="Lunes 27 de octubre de 2026" />
+
+    <TextView
+        android:id="@+id/hora"
+        style="@style/Organizador.Dato"
+        app:drawableStartCompat="@drawable/ic_schedule"
+        tools:text="10:00 a.m." />
+
+    <TextView
+        android:id="@+id/contacto"
+        style="@style/Organizador.Dato"
+        app:drawableStartCompat="@drawable/ic_person"
+        tools:text="Alejandro" />
+
+    <TextView
+        android:id="@+id/ubicacion"
+        style="@style/Organizador.Dato"
+        app:drawableStartCompat="@drawable/ic_location"
+        tools:text="Edificio 2, ESCOM – Av. Juan de Dios Bátiz s/n, Lindavista, CDMX" />
+
+    <TextView
+        android:id="@+id/recordatorio"
+        style="@style/Organizador.Dato"
+        app:drawableStartCompat="@drawable/ic_notifications"
+        tools:text="Recordatorio: 10 minutos antes" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/boton_cerrar"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cerrar" />
+
+        <Button
+            android:id="@+id/boton_mapa"
+            style="@style/Widget.Material3.Button.TonalButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/ver_mapa"
+            app:icon="@drawable/ic_map" />
+    </LinearLayout>
+</LinearLayout>

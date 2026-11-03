@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Diseño personalizado de la notificación de un evento (RemoteViews): imagen + todos los datos.
+     Solo admite vistas compatibles con RemoteViews y colores fijos, sin atributos del tema. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/bg_circulo"
+        android:backgroundTint="@color/md_primary_container"
+        android:contentDescription="@string/notificacion_imagen"
+        android:padding="16dp"
+        android:src="@drawable/ic_calendar"
+        android:tint="@color/md_on_primary_container"
+        tools:ignore="UseAppTint" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titulo"
+            style="@style/TextAppearance.Compat.Notification.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notificacion_titulo_ejemplo" />
+
+        <TextView
+            android:id="@+id/descripcion"
+            style="@style/TextAppearance.Compat.Notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Revisión del primer avance de la app" />
+
+        <TextView
+            android:id="@+id/fecha_hora"
+            style="@style/TextAppearance.Compat.Notification.Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            tools:text="Lunes 27 de octubre · 10:00 a.m." />
+
+        <TextView
+            android:id="@+id/contacto"
+            style="@style/TextAppearance.Compat.Notification.Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Con: Alejandro" />
+
+        <TextView
+            android:id="@+id/ubicacion"
+            style="@style/TextAppearance.Compat.Notification.Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            tools:text="Edificio 2, ESCOM – Av. Juan de Dios Bátiz s/n, CDMX" />
+
+        <TextView
+            android:id="@+id/estatus"
+            style="@style/TextAppearance.Compat.Notification.Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Reunión · Pendiente" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Los ids de los ítems coinciden con los destinos de nav_graph.xml para que NavigationUI navegue solo. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/anadirEventoFragment"
+            android:icon="@drawable/ic_add_event"
+            android:title="@string/menu_anadir_evento" />
+        <item
+            android:id="@+id/consultarFragment"
+            android:icon="@drawable/ic_search"
+            android:title="@string/menu_consultar" />
+        <item
+            android:id="@+id/calendarioFragment"
+            android:icon="@drawable/ic_calendar"
+            android:title="@string/menu_calendario" />
+    </group>
+    <item android:title="@string/menu_seccion_nube">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/respaldoFragment"
+                    android:icon="@drawable/ic_cloud_upload"
+                    android:title="@string/menu_respaldo" />
+                <item
+                    android:id="@+id/restaurarFragment"
+                    android:icon="@drawable/ic_cloud_download"
+                    android:title="@string/menu_restaurar" />
+            </group>
+        </menu>
+    </item>
+    <group
+        android:id="@+id/grupo_app"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/configuracionFragment"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/menu_configuracion" />
+        <item
+            android:id="@+id/acercaDeFragment"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_acerca_de" />
+        <item
+            android:id="@+id/salir"
+            android:checkable="false"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_salir" />
+    </group>
+</menu>

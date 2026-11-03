@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta Material 3 (tema claro) -->
+    <color name="md_primary">#5E4FB8</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#E6DEFF</color>
+    <color name="md_on_primary_container">#1B0A6B</color>
+    <color name="md_secondary">#5F5C71</color>
+    <color name="md_on_secondary">#FFFFFF</color>
+    <color name="md_secondary_container">#E5DFF9</color>
+    <color name="md_on_secondary_container">#1C192B</color>
+    <color name="md_tertiary">#7C5264</color>
+    <color name="md_on_tertiary">#FFFFFF</color>
+    <color name="md_tertiary_container">#FFD8E6</color>
+    <color name="md_on_tertiary_container">#31101F</color>
+    <color name="md_error">#BA1A1A</color>
+    <color name="md_on_error">#FFFFFF</color>
+    <color name="md_error_container">#FFDAD6</color>
+    <color name="md_on_error_container">#410002</color>
+    <color name="md_background">#FDF8FF</color>
+    <color name="md_on_background">#1C1B20</color>
+    <color name="md_surface">#FDF8FF</color>
+    <color name="md_on_surface">#1C1B20</color>
+    <color name="md_surface_variant">#E5E0EC</color>
+    <color name="md_on_surface_variant">#48454E</color>
+    <color name="md_outline">#79757F</color>
+    <color name="md_outline_variant">#C9C4D0</color>
+    <color name="md_surface_container_lowest">#FFFFFF</color>
+    <color name="md_surface_container_low">#F7F2FA</color>
+    <color name="md_surface_container">#F1ECF6</color>
+    <color name="md_surface_container_high">#ECE6F0</color>
+    <color name="md_surface_container_highest">#E6E0EA</color>
+
+    <!-- Barra superior: se mantiene oscura en ambos modos para que los íconos claros de la barra de estado se lean -->
+    <color name="barra_superior">#5E4FB8</color>
+    <color name="sobre_barra_superior">#FFFFFF</color>
+
+    <!-- Estatus de los eventos -->
+    <color name="estatus_pendiente_fondo">#FFE08A</color>
+    <color name="estatus_pendiente_texto">#5C4300</color>
+    <color name="estatus_realizado_fondo">#C8F0D0</color>
+    <color name="estatus_realizado_texto">#0F5223</color>
+    <color name="estatus_aplazado_fondo">#FFDAD6</color>
+    <color name="estatus_aplazado_texto">#8C1D18</color>
+</resources>

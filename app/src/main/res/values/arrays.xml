@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categorias_evento">
+        <item>@string/categoria_reunion</item>
+        <item>@string/categoria_entrega</item>
+        <item>@string/categoria_practica</item>
+        <item>@string/categoria_examen</item>
+        <item>@string/categoria_otro</item>
+    </string-array>
+
+    <string-array name="categorias_filtro">
+        <item>@string/categoria_todas</item>
+        <item>@string/categoria_reunion</item>
+        <item>@string/categoria_entrega</item>
+        <item>@string/categoria_practica</item>
+        <item>@string/categoria_examen</item>
+        <item>@string/categoria_otro</item>
+    </string-array>
+
+    <string-array name="estatus_evento">
+        <item>@string/estatus_pendiente</item>
+        <item>@string/estatus_realizado</item>
+        <item>@string/estatus_aplazado</item>
+    </string-array>
+
+    <string-array name="meses">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+</resources>

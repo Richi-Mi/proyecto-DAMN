@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Proyecto DAMN</string>
+    <string name="app_titulo">Organizador de Eventos</string>
+    <string name="app_subtitulo">Tus tareas y actividades al día</string>
+
+    <!-- Navegación -->
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_anadir_evento">Añadir eventos</string>
+    <string name="menu_consultar">Consultar y modificar eventos</string>
+    <string name="menu_consultar_corto">Consultar</string>
+    <string name="menu_calendario">Mostrar calendario</string>
+    <string name="menu_respaldo">Realizar respaldo</string>
+    <string name="menu_restaurar">Restaurar datos</string>
+    <string name="menu_configuracion">Configuración</string>
+    <string name="menu_acerca_de">Acerca de…</string>
+    <string name="menu_salir">Salir</string>
+    <string name="menu_seccion_nube">Google Drive o Dropbox</string>
+
+    <!-- Títulos de la barra superior -->
+    <string name="titulo_inicio">Organizador de Eventos</string>
+    <string name="titulo_anadir_evento">Crear evento</string>
+    <string name="titulo_consultar">Consultar eventos</string>
+    <string name="titulo_calendario">Calendario</string>
+    <string name="titulo_respaldo">Respaldo</string>
+    <string name="titulo_restaurar">Restaurar datos</string>
+    <string name="titulo_configuracion">Configuración</string>
+    <string name="titulo_acerca_de">Acerca de</string>
+
+    <!-- Categorías por defecto -->
+    <string name="categoria_reunion">Reunión</string>
+    <string name="categoria_entrega">Entrega de proyecto</string>
+    <string name="categoria_practica">Práctica</string>
+    <string name="categoria_examen">Examen</string>
+    <string name="categoria_otro">Otro</string>
+    <string name="categoria_todas">Todas las categorías</string>
+
+    <!-- Datos de un evento -->
+    <string name="estatus_pendiente">Pendiente</string>
+    <string name="estatus_realizado">Realizado</string>
+    <string name="estatus_aplazado">Aplazado</string>
+    <string name="recordatorio_al_momento">Al momento</string>
+    <string name="recordatorio_diez_minutos">10 minutos antes</string>
+    <string name="recordatorio_un_dia">1 día antes</string>
+    <string name="recordatorio_sin">Sin recordatorio</string>
+    <string name="evento_fecha_hora">%1$s · %2$s</string>
+    <string name="evento_descripcion">Descripción: %s</string>
+    <string name="evento_recordatorio">Recordatorio: %s</string>
+    <string name="editar_evento">Modificar evento</string>
+    <string name="ver_mapa">Ver mapa</string>
+
+    <!-- Inicio -->
+    <string name="inicio_titulo">Eventos de los próximos 5 días</string>
+    <string name="inicio_rango">Del %1$s al %2$s</string>
+    <string name="inicio_vacio">No tienes eventos en los próximos días</string>
+
+    <!-- Añadir evento -->
+    <string name="campo_categoria">Categoría</string>
+    <string name="campo_fecha">Fecha</string>
+    <string name="campo_hora">Hora</string>
+    <string name="campo_descripcion">Descripción</string>
+    <string name="campo_estatus">Estatus</string>
+    <string name="campo_ubicacion">Ubicación</string>
+    <string name="campo_contacto">Contacto</string>
+    <string name="campo_recordatorio">Recordatorio</string>
+    <string name="placeholder_fecha">dd/mm/aaaa</string>
+    <string name="placeholder_hora">--:-- --</string>
+    <string name="ayuda_descripcion">Una breve descripción del evento</string>
+    <string name="ayuda_ubicacion">Se mostrará la dirección completa del lugar elegido en el mapa</string>
+    <string name="ayuda_contacto">Se elige de la lista de contactos del celular</string>
+    <string name="seleccionar_en_mapa">Seleccionar en el mapa</string>
+    <string name="elegir_contacto">Elegir de mis contactos</string>
+    <string name="guardar">Guardar evento</string>
+
+    <!-- Consultar y modificar -->
+    <string name="consultar_titulo">Consultar y modificar</string>
+    <string name="filtrar_categoria">Filtrar por categoría</string>
+    <string name="filtrar_fecha">Filtrar por fecha</string>
+    <string name="filtro_dia">Día</string>
+    <string name="filtro_rango">Rango</string>
+    <string name="filtro_mes">Mes</string>
+    <string name="filtro_anio">Año</string>
+    <string name="campo_fecha_inicial">Fecha inicial</string>
+    <string name="campo_fecha_final">Fecha final</string>
+    <string name="campo_mes">Mes</string>
+    <string name="campo_anio">Año</string>
+    <string name="consultar">Consultar</string>
+    <string name="limpiar_filtros">Limpiar filtros</string>
+    <string name="buscar_resultados">Buscar en los resultados</string>
+    <plurals name="resultados">
+        <item quantity="one">%d evento encontrado</item>
+        <item quantity="other">%d eventos encontrados</item>
+    </plurals>
+    <string name="modificar_titulo">Modificar evento</string>
+    <string name="modificar_subtitulo">%1$s · %2$s</string>
+    <string name="elige_estatus">Elige el estatus</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="eliminar_evento">Eliminar evento</string>
+
+    <!-- Calendario -->
+    <string name="calendario_eventos_del_dia">Eventos del %s</string>
+    <string name="calendario_vacio">No hay eventos este día</string>
+    <string name="calendario_ayuda">Toca un evento para ver todos sus datos</string>
+    <string name="cerrar">Cerrar</string>
+
+    <!-- Respaldo y restauración -->
+    <string name="plataforma">Plataforma</string>
+    <string name="google_drive">Google Drive</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="respaldo_intro">Guarda una copia de todos los eventos del organizador en la nube.</string>
+    <string name="respaldo_ultimo">Último respaldo</string>
+    <string name="respaldo_ultimo_ejemplo">Google Drive · 25/10/2026, 18:40</string>
+    <string name="respaldo_contenido">Se respaldará</string>
+    <string name="respaldo_contenido_eventos">7 eventos</string>
+    <string name="respaldo_contenido_tipos">5 tipos de evento</string>
+    <string name="respaldo_contenido_config">Configuración de recordatorios</string>
+    <string name="realizar_respaldo">Realizar respaldo</string>
+    <string name="respaldo_nota">Se te pedirá iniciar sesión en la plataforma elegida.</string>
+    <string name="restaurar_intro">Recupera los eventos guardados en un respaldo anterior.</string>
+    <string name="restaurar_disponibles">Respaldos disponibles</string>
+    <string name="restaurar_aviso">Al restaurar se reemplazarán los eventos que tienes actualmente en el celular.</string>
+    <string name="restaurar">Restaurar datos</string>
+    <string name="respaldo_detalle">%1$d eventos · %2$s</string>
+
+    <!-- Configuración -->
+    <string name="config_tipos_titulo">Tipos de evento</string>
+    <string name="config_tipos_descripcion">Estas son las categorías que aparecen al crear y consultar eventos.</string>
+    <string name="config_nuevo_tipo">Nuevo tipo de evento</string>
+    <string name="agregar">Agregar</string>
+    <string name="eliminar_tipo">Eliminar tipo de evento</string>
+    <string name="restablecer_tipos">Restablecer tipos por defecto</string>
+
+    <!-- Acerca de -->
+    <string name="acerca_version">Versión 1.0</string>
+    <string name="acerca_descripcion">Aplicación para llevar el control de las tareas y actividades de una persona: reuniones, entregas, prácticas, exámenes y más, con recordatorios, calendario y respaldo en la nube.</string>
+    <string name="acerca_desarrollado_por">Desarrollado por</string>
+    <string name="acerca_autor">José Ricardo Mendoza Castañeda</string>
+    <string name="acerca_escuela">Escuela Superior de Cómputo (ESCOM) – IPN</string>
+    <string name="acerca_materia">Desarrollo de Aplicaciones Móviles Nativas · 7.º semestre</string>
+
+    <!-- Notificación -->
+    <string name="notificacion_titulo_ejemplo">Reunión en 10 minutos</string>
+    <string name="notificacion_imagen">Imagen de la categoría del evento</string>
+</resources>

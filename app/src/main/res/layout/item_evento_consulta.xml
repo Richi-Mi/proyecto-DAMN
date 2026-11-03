@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/materialCardViewOutlinedStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categoria"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textStyle="bold"
+                tools:text="Reunión" />
+
+            <TextView
+                android:id="@+id/estatus"
+                style="@style/Organizador.Estatus"
+                tools:backgroundTint="@color/estatus_aplazado_fondo"
+                tools:text="Aplazado"
+                tools:textColor="@color/estatus_aplazado_texto" />
+
+            <Button
+                android:id="@+id/boton_editar"
+                style="?attr/materialIconButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/editar_evento"
+                app:icon="@drawable/ic_edit"
+                app:iconTint="?attr/colorPrimary" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/fecha"
+            style="@style/Organizador.Dato"
+            app:drawableStartCompat="@drawable/ic_calendar"
+            tools:text="27/10/2026 · 10:00 a.m." />
+
+        <TextView
+            android:id="@+id/contacto"
+            style="@style/Organizador.Dato"
+            app:drawableStartCompat="@drawable/ic_person"
+            tools:text="Alejandro" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ubicacion"
+                style="@style/Organizador.Dato"
+                android:layout_width="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                app:drawableStartCompat="@drawable/ic_location"
+                android:ellipsize="end"
+                android:maxLines="2"
+                tools:text="Edificio 2, ESCOM – Av. Juan de Dios Bátiz s/n, Lindavista, CDMX" />
+
+            <Button
+                android:id="@+id/boton_mapa"
+                style="@style/Widget.Material3.Button.TextButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_mapa"
+                app:icon="@drawable/ic_map" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/descripcion"
+            style="@style/Organizador.Dato"
+            android:layout_marginEnd="12dp"
+            app:drawableStartCompat="@drawable/ic_notes"
+            tools:text="Revisión del primer avance de la app" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

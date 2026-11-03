@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.anadir.AnadirEventoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Categoría -->
+        <TextView
+            style="@style/Organizador.Etiqueta"
+            android:layout_marginTop="0dp"
+            android:text="@string/campo_categoria" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/grupo_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkedChip="@id/chip_reunion"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_reunion"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_reunion" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_entrega"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_entrega" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_practica"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_practica" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_examen"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_examen" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_otro"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_otro" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Fecha y hora: abrirán DatePickerDialog y TimePickerDialog -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="?attr/textInputOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:hint="@string/campo_fecha"
+                app:placeholderText="@string/placeholder_fecha"
+                app:startIconDrawable="@drawable/ic_calendar">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campo_fecha"
+                    style="@style/Organizador.CampoSelector" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="?attr/textInputOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:hint="@string/campo_hora"
+                app:placeholderText="@string/placeholder_hora"
+                app:startIconDrawable="@drawable/ic_schedule">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campo_hora"
+                    style="@style/Organizador.CampoSelector" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Descripción -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="?attr/textInputOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/campo_descripcion"
+            app:counterEnabled="true"
+            app:counterMaxLength="200"
+            app:helperText="@string/ayuda_descripcion"
+            app:startIconDrawable="@drawable/ic_notes">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/campo_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLength="200"
+                android:minLines="3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Estatus -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="?attr/textInputOutlinedExposedDropdownMenuStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/campo_estatus"
+            app:startIconDrawable="@drawable/ic_check">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/campo_estatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                app:simpleItems="@array/estatus_evento" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Ubicación: se elegirá desde un mapa -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="?attr/textInputOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/campo_ubicacion"
+            app:helperText="@string/ayuda_ubicacion"
+            app:startIconDrawable="@drawable/ic_location">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/campo_ubicacion"
+                style="@style/Organizador.CampoSelector"
+                android:maxLines="3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/boton_mapa"
+            style="@style/Widget.Material3.Button.TonalButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/seleccionar_en_mapa"
+            app:icon="@drawable/ic_map" />
+
+        <!-- Contacto: se elegirá de la agenda del celular -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="?attr/textInputOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/campo_contacto"
+            app:helperText="@string/ayuda_contacto"
+            app:startIconDrawable="@drawable/ic_person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/campo_contacto"
+                style="@style/Organizador.CampoSelector" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/boton_contacto"
+            style="@style/Widget.Material3.Button.TonalButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/elegir_contacto"
+            app:icon="@drawable/ic_person" />
+
+        <!-- Recordatorio -->
+        <TextView
+            style="@style/Organizador.Etiqueta"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="8dp"
+            app:drawableTint="?attr/colorPrimary"
+            android:gravity="center_vertical"
+            android:text="@string/campo_recordatorio"
+            app:drawableStartCompat="@drawable/ic_notifications" />
+
+        <com.google.android.material.card.MaterialCardView
+            style="?attr/materialCardViewFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/grupo_recordatorio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/recordatorio_al_momento"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/recordatorio_al_momento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recordatorio_al_momento" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/recordatorio_diez_minutos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recordatorio_diez_minutos" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/recordatorio_un_dia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recordatorio_un_dia" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/recordatorio_sin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recordatorio_sin" />
+            </RadioGroup>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/boton_guardar"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/guardar"
+            app:icon="@drawable/ic_check" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

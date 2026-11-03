@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.richi_mc.proyectodamn.ui.inicio.InicioFragment"
+        android:label="@string/titulo_inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/anadirEventoFragment"
+        android:name="com.richi_mc.proyectodamn.ui.anadir.AnadirEventoFragment"
+        android:label="@string/titulo_anadir_evento"
+        tools:layout="@layout/fragment_anadir_evento" />
+    <fragment
+        android:id="@+id/consultarFragment"
+        android:name="com.richi_mc.proyectodamn.ui.consultar.ConsultarFragment"
+        android:label="@string/titulo_consultar"
+        tools:layout="@layout/fragment_consultar" />
+    <fragment
+        android:id="@+id/calendarioFragment"
+        android:name="com.richi_mc.proyectodamn.ui.calendario.CalendarioFragment"
+        android:label="@string/titulo_calendario"
+        tools:layout="@layout/fragment_calendario" />
+    <fragment
+        android:id="@+id/respaldoFragment"
+        android:name="com.richi_mc.proyectodamn.ui.respaldo.RespaldoFragment"
+        android:label="@string/titulo_respaldo"
+        tools:layout="@layout/fragment_respaldo" />
+    <fragment
+        android:id="@+id/restaurarFragment"
+        android:name="com.richi_mc.proyectodamn.ui.restaurar.RestaurarFragment"
+        android:label="@string/titulo_restaurar"
+        tools:layout="@layout/fragment_restaurar" />
+    <fragment
+        android:id="@+id/configuracionFragment"
+        android:name="com.richi_mc.proyectodamn.ui.configuracion.ConfiguracionFragment"
+        android:label="@string/titulo_configuracion"
+        tools:layout="@layout/fragment_configuracion" />
+    <fragment
+        android:id="@+id/acercaDeFragment"
+        android:name="com.richi_mc.proyectodamn.ui.acerca.AcercaDeFragment"
+        android:label="@string/titulo_acerca_de"
+        tools:layout="@layout/fragment_acerca_de" />
+</navigation>

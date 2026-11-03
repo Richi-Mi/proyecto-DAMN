@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/materialCardViewElevatedStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categoria"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                app:drawableTint="?attr/colorPrimary"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textColor="?attr/colorPrimary"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_label"
+                tools:text="Reunión" />
+
+            <TextView
+                android:id="@+id/estatus"
+                style="@style/Organizador.Estatus"
+                tools:backgroundTint="@color/estatus_pendiente_fondo"
+                tools:text="Pendiente"
+                tools:textColor="@color/estatus_pendiente_texto" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fecha"
+            style="@style/Organizador.Dato"
+            android:layout_marginTop="12dp"
+            app:drawableStartCompat="@drawable/ic_calendar"
+            tools:text="Lunes 27 de octubre · 10:00 a.m." />
+
+        <TextView
+            android:id="@+id/contacto"
+            style="@style/Organizador.Dato"
+            app:drawableStartCompat="@drawable/ic_person"
+            tools:text="Alejandro" />
+
+        <TextView
+            android:id="@+id/ubicacion"
+            style="@style/Organizador.Dato"
+            app:drawableStartCompat="@drawable/ic_location"
+            tools:text="Edificio 2, ESCOM – Av. Juan de Dios Bátiz s/n, Lindavista, CDMX" />
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="?attr/colorOutline"
+            android:textStyle="italic"
+            tools:text="Descripción: Revisión del primer avance de la app" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
